@@ -13,7 +13,7 @@ These codes are designed to help users streamline parameter estimation workflows
 
 ## Requirements
 To use these scripts, you must have:
-- **BLUPF90** suite installed ([installation guide](https://nce.ads.uga.edu/html/projects/programs/))
+- **BLUPF90** suite installed ([download here](https://nce.ads.uga.edu/html/projects/programs/))
 - **WOMBAT** installed ([download here](http://didgeridoo.une.edu.au/km/wmbdownload2.php))
 - Linux/Mac/Windows command-line interface
 
