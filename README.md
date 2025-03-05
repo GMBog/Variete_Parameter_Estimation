@@ -1,6 +1,6 @@
 # Parameter Estimation Codes for BLUPF90 and WOMBAT
 
-This repository contains a variety of scripts and parameter estimation codes to be used with [BLUPF90](https://nce.ads.uga.edu/wiki/doku.php?id=start) and [WOMBAT](http://agtrilab.tamu.edu/wiki/doku.php?id=wombat). These tools are widely used for mixed model analyses in animal breeding and genetics.
+This repository contains a variety of scripts and parameter estimation codes to be used with [BLUPF90](https://nce.ads.uga.edu/wiki/doku.php?id=start) and [WOMBAT](http://didgeridoo.une.edu.au/km/wombat.php). These tools are widely used for mixed model analyses in animal breeding and genetics.
 
 ## Overview
 The scripts provided in this repository facilitate the estimation of genetic parameters using BLUPF90 and WOMBAT. They include:
