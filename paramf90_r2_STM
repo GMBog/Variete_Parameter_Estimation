@@ -1,0 +1,48 @@
+#Parameter file for program renf90
+#Single-trait model with repeated records
+DATAFILE
+data.dat
+TRAITS
+7
+FIELDS_PASSED TO OUTPUT
+
+WEIGHT(S)
+
+RESIDUAL_VARIANCE
+0.5
+EFFECT
+3 cross alpha
+EFFECT
+4 cross alpha
+EFFECT
+0 cross alpha
+EFFECT
+1 cross alpha
+RANDOM
+animal
+SNP_FILE
+~/dirfiles/Genotypes.mat
+(CO)VARIANCES
+0.5
+EFFECT
+1 cross alpha
+RANDOM
+diagonal
+(CO)VARIANCES
+0.5
+OPTION EM-REML 100
+OPTION method VCE
+OPTION se_covar_function H2 G_4_4_1_1/(G_4_4_1_1+R_1_1)
+OPTION se_covar_function R2 (G_4_4_1_1+G_5_5_1_1)/(G_4_4_1_1+G_5_5_1_1+R_1_1)
+OPTION sol se
+OPTION origID
+OPTION missingAIPL
+OPTION AlphaBeta 1 0
+OPTION TauOmega 1 0
+OPTION GammaDelta 0.001 0.001
+OPTION omit_ainv
+OPTION tunedG 0
+OPTION minfreq 0.05
+OPTION callrate 0.10
+OPTION callrateAnim 0.10
+OPTION monomorphic 0
