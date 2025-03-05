@@ -13,9 +13,8 @@ These codes are designed to help users streamline parameter estimation workflows
 
 ## Requirements
 To use these scripts, you must have:
-- **BLUPF90** suite installed ([installation guide](https://nce.ads.uga.edu/wiki/doku.php?id=download))
-- **WOMBAT** installed ([download here](http://agtrilab.tamu.edu/wiki/doku.php?id=wombat))
-- R (optional) for data preprocessing and post-processing
+- **BLUPF90** suite installed ([installation guide](https://nce.ads.uga.edu/html/projects/programs/))
+- **WOMBAT** installed ([download here](http://didgeridoo.une.edu.au/km/wmbdownload2.php))
 - Linux/Mac/Windows command-line interface
 
 ## File Structure
