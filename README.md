@@ -27,38 +27,11 @@ To use these scripts, you must have:
 │   └── se_AIREML.R              # Example of how AIREML calculate the standard errors
 │
 ├── wombat/
-│   ├── prepare_data_wombat.R   # Prepares input data for WOMBAT
-│   ├── run_wombat.sh           # Example script to run WOMBAT
-│   ├── wombat.par              # Sample parameter file
-│   └── post_process_wombat.R   # Extracts and formats results
+│   ├── paramfile_GWAS.par      # Parameter file for WOMBAT
+│   ├── script_iterGWAS.sh      # Script to run multiple analysis with WOMBAT
 │
 └── README.md         # This file
 ```
-
-## Usage
-### BLUPF90
-1. Run BLUPF90:
-   ```sh
-   sh blupf90_scripts/run_blupf90.sh
-   ```
-3. Post-process results:
-   ```sh
-   Rscript blupf90_scripts/post_process.R
-   ```
-
-### WOMBAT
-1. Prepare data:
-   ```sh
-   Rscript wombat_scripts/prepare_data_wombat.R
-   ```
-2. Run WOMBAT:
-   ```sh
-   sh wombat_scripts/run_wombat.sh
-   ```
-3. Post-process results:
-   ```sh
-   Rscript wombat_scripts/post_process_wombat.R
-   ```
 
 ## Citation
 If you use these scripts in your research, please cite:
