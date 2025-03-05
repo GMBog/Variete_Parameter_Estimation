@@ -41,5 +41,3 @@ OPTION minfreq 0.05
 OPTION callrate 0.10
 OPTION callrateAnim 0.10
 OPTION monomorphic 0
-OPTION snp_p_value
-#OPTION SNP_moving_average 20
