@@ -19,13 +19,14 @@ To use these scripts, you must have:
 
 ## File Structure
 ```
-├── blupf90_scripts/
-│   ├── prepare_data.R     # Prepares input data for BLUPF90
-│   ├── run_blupf90.sh     # Example script to run BLUPF90
-│   ├── blupf90.par        # Sample parameter file
-│   └── post_process.R     # Extracts and formats results
+├── blupf90/
+│   ├── paramfile_STM.par        # Parameter file for a Single-Trait Model
+|   ├── paramfile_rep_STM.par    # Parameter file for a Single-Trait Model with repeated records
+│   ├── paramfile_MTM.par        # Parameter file for a Multi-Trait Model
+│   ├── paramfile_GWAS.par       # Parameter file for GWAS 
+│   └── se_AIREML.R              # Example of how AIREML calculate the standard errors
 │
-├── wombat_scripts/
+├── wombat/
 │   ├── prepare_data_wombat.R   # Prepares input data for WOMBAT
 │   ├── run_wombat.sh           # Example script to run WOMBAT
 │   ├── wombat.par              # Sample parameter file
