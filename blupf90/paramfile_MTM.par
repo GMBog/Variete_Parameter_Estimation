@@ -1,0 +1,42 @@
+#Parameter file for renf90
+#Multi-trait model
+DATAFILE
+data.dat    #Data file with ID, fixed effects, and traits
+TRAITS
+6 5         #Positions in data.dat
+FIELDS_PASSED TO OUTPUT
+
+WEIGHT(S)
+
+RESIDUAL_VARIANCE
+0.5 0.05
+0.05 0.5
+EFFECT
+0 3 cross alpha    #Effect 1 (col 3 in data.dat) enters in Trait 2 only
+EFFECT
+4 4 cross alpha    #Effect 2 (col 4 in data.dat) enters in Trait 1 and 2
+EFFECT
+1 1  cross alpha   #Effect 3 (col 1 = ID in data.dat) is the Animal effect
+RANDOM
+animal
+SNP_FILE
+G.mat
+(CO)VARIANCES
+0.5 0.05
+0.05 0.5
+OPTION EM-REML 50
+OPTION method VCE
+OPTION se_covar_function H2_t1 G_4_4_1_1/(G_4_4_1_1+R_1_1)
+OPTION se_covar_function H2_t2 G_4_4_2_2/(G_4_4_2_2+R_2_2)
+OPTION solution all
+OPTION sol se
+OPTION missingAIPL
+OPTION AlphaBeta 1 0
+OPTION TauOmega 1 0
+OPTION GammaDelta 0.001 0.001
+OPTION omit_ainv
+OPTION tunedG 0
+OPTION minfreq 0.05
+OPTION callrate 0.10
+OPTION callrateAnim 0.10
+OPTION monomorphic 0
