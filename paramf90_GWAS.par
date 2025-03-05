@@ -1,0 +1,45 @@
+#Parameter file for program renf90
+#GWA Studies
+DATAFILE
+data.dat
+TRAITS
+6 5
+FIELDS_PASSED TO OUTPUT
+
+WEIGHT(S)
+
+RESIDUAL_VARIANCE
+0.5 0.05
+0.05 0.5
+EFFECT
+3 3 cross alpha
+EFFECT
+4 4 cross alpha
+EFFECT
+1 1  cross alpha
+RANDOM
+animal
+SNP_FILE
+G.mat
+(CO)VARIANCES
+0.5 0.05
+0.05 0.5
+OPTION map_file ~/dirfiles/chrmap
+OPTION EM-REML 50
+OPTION method VCE
+OPTION se_covar_function H2_t1 G_4_4_1_1/(G_4_4_1_1+R_1_1)
+OPTION se_covar_function H2_t2 G_4_4_2_2/(G_4_4_2_2+R_2_2)
+OPTION snp_p_value
+#OPTION SNP_moving_average 20
+OPTION solution all
+OPTION sol se
+OPTION missingAIPL
+OPTION AlphaBeta 1 0
+OPTION TauOmega 1 0
+OPTION GammaDelta 0.001 0.001
+OPTION omit_ainv
+OPTION tunedG 0
+OPTION minfreq 0.05
+OPTION callrate 0.10
+OPTION callrateAnim 0.10
+OPTION monomorphic 0 
